@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 import { GridPattern } from "@/components/ui/grid-pattern";
 import { Skeleton } from "@/components/ui/skeleton";
 
-const SOCKET_URL = "http://localhost:5000";
+const SOCKET_URL = process.env.NEXT_PUBLIC_SOCKET_URL || "http://localhost:5000";
 
 
 

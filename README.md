@@ -36,7 +36,7 @@ Aplikasi web Tic Tac Toe modern dengan estetika **Retro Brutalist**. Game ini me
 
 ## 🔗 Repository Terkait
 Game ini membutuhkan backend untuk fitur Mabar Online:
-- **Backend**: [tic-tac-toe-backend](https://github.com/Raflyromeo/tic-tac-toe-backend)
+- **Backend**: [tic-tac-toe-backend](https://github.com/Raflyromeo/tic-tac-toe-backend) (Deploy di Railway)
 
 ---
 Dibuat dengan ❤️ oleh [Rafly Romeo](https://github.com/Raflyromeo)
