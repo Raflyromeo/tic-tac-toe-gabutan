@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎮 Tic Tac Toe Pro
 
-## Getting Started
+Project Tic Tac Toe keren buatan **Rafly Romeo**. Game ini mendukung mode single player melawan bot AI cerdas dan mode multiplayer online secara real-time.
 
-First, run the development server:
+## ✨ Fitur Utama
+- **Arena Bot**: Lawan bot AI dengan algoritma Minimax (Mudah, Sedang, Sulit).
+- **Mabar Online**: Duel real-time via Socket.io dengan sistem kode ruangan.
+- **Brutalist UI**: Desain bold dengan border tebal dan warna kontras.
+- **Full Responsive**: Optimal di Desktop, Tablet (iPad), dan Mobile.
+- **Theme Support**: Mendukung Mode Terang, Gelap, dan Sistem.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📂 Struktur Project
+```text
+tictactoe/
+├── backend/                # Server Python (Flask-SocketIO)
+│   ├── app.py              # Logika utama server & socket
+│   └── requirements.txt    # Library Python
+└── frontend/               # Aplikasi Web (Next.js)
+    ├── src/
+    │   ├── app/            # Routing (Next.js App Router)
+    │   ├── components/     # UI Components (React)
+    │   ├── hooks/          # Custom hooks (Logika game)
+    │   └── lib/            # Utility functions
+    ├── public/             # Assets statis
+    └── package.json        # Dependencies JS
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Cara Menjalankan (Lokal)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Clone Project
+```bash
+git clone https://github.com/USERNAME/REPO-NAME.git
+cd tictactoe
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Jalankan Backend
+```bash
+cd backend
+python -m venv venv
+# Windows
+.\venv\Scripts\activate
+# Mac/Linux: source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
 
-## Learn More
+### 3. Jalankan Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+## ⬆️ Cara Push ke GitHub
+Jika kamu ingin menyimpan perubahan ke repository kamu sendiri:
+```bash
+# Inisialisasi (Jika belum)
+git init
+git add .
+git commit -m "update: fitur mabar online & UI responsif"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Tambahkan remote (Ganti dengan link repo kamu)
+git remote add origin https://github.com/USERNAME/REPO-NAME.git
+git branch -M main
+git push -u origin main
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🌐 Tech Stack
+- **Frontend**: Next.js 16, React 19, Tailwind CSS 4, Framer Motion.
+- **Backend**: Python 3, Flask, Flask-SocketIO.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+**Dibuat oleh Rafly Romeo.** 🚀
