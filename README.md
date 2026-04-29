@@ -1,73 +1,40 @@
-# 🎮 Tic Tac Toe Pro
+# 🎮 Tic Tac Toe Pro (Frontend)
 
-Project Tic Tac Toe keren buatan **Rafly Romeo**. Game ini mendukung mode single player melawan bot AI cerdas dan mode multiplayer online secara real-time.
+Aplikasi web Tic Tac Toe modern dengan estetika **Retro Brutalist**. Game ini mendukung mode single player melawan Bot AI cerdas dan mode multiplayer online secara real-time.
 
 ## ✨ Fitur Utama
-- **Arena Bot**: Lawan bot AI dengan algoritma Minimax (Mudah, Sedang, Sulit).
-- **Mabar Online**: Duel real-time via Socket.io dengan sistem kode ruangan.
-- **Brutalist UI**: Desain bold dengan border tebal dan warna kontras.
-- **Full Responsive**: Optimal di Desktop, Tablet (iPad), dan Mobile.
-- **Theme Support**: Mendukung Mode Terang, Gelap, dan Sistem.
+- **Arena Bot**: Lawan bot AI dengan algoritma Minimax (Tingkat: Mudah, Sedang, Sulit).
+- **Mabar Online**: Duel real-time via Socket.io dengan sistem kode ruangan unik.
+- **Brutalist UI**: Desain bold dengan border tebal, shadow offset, dan warna kontras.
+- **Full Responsive**: Optimal di semua perangkat (Desktop, Tablet, Mobile).
+- **Mode Tema**: Mendukung Mode Terang, Gelap, dan Sinkronisasi Sistem.
 
-## 📂 Struktur Project
-```text
-tictactoe/
-├── backend/                # Server Python (Flask-SocketIO)
-│   ├── app.py              # Logika utama server & socket
-│   └── requirements.txt    # Library Python
-└── frontend/               # Aplikasi Web (Next.js)
-    ├── src/
-    │   ├── app/            # Routing (Next.js App Router)
-    │   ├── components/     # UI Components (React)
-    │   ├── hooks/          # Custom hooks (Logika game)
-    │   └── lib/            # Utility functions
-    ├── public/             # Assets statis
-    └── package.json        # Dependencies JS
-```
+## 🛠️ Tech Stack
+- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Communication**: [Socket.io-client](https://socket.io/)
 
-## 🚀 Cara Menjalankan (Lokal)
+## 🚀 Cara Menjalankan
+1. Clone repository:
+   ```bash
+   git clone https://github.com/Raflyromeo/tic-tac-toe-gabutan.git
+   cd tic-tac-toe-gabutan
+   ```
+2. Instal dependensi:
+   ```bash
+   npm install
+   ```
+3. Jalankan server pengembangan:
+   ```bash
+   npm run dev
+   ```
+4. Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-### 1. Clone Project
-```bash
-git clone https://github.com/USERNAME/REPO-NAME.git
-cd tictactoe
-```
-
-### 2. Jalankan Backend
-```bash
-cd backend
-python -m venv venv
-# Windows
-.\venv\Scripts\activate
-# Mac/Linux: source venv/bin/activate
-pip install -r requirements.txt
-python app.py
-```
-
-### 3. Jalankan Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-## ⬆️ Cara Push ke GitHub
-Jika kamu ingin menyimpan perubahan ke repository kamu sendiri:
-```bash
-# Inisialisasi (Jika belum)
-git init
-git add .
-git commit -m "update: fitur mabar online & UI responsif"
-
-# Tambahkan remote (Ganti dengan link repo kamu)
-git remote add origin https://github.com/USERNAME/REPO-NAME.git
-git branch -M main
-git push -u origin main
-```
-
-## 🌐 Tech Stack
-- **Frontend**: Next.js 16, React 19, Tailwind CSS 4, Framer Motion.
-- **Backend**: Python 3, Flask, Flask-SocketIO.
+## 🔗 Repository Terkait
+Game ini membutuhkan backend untuk fitur Mabar Online:
+- **Backend**: [tic-tac-toe-backend](https://github.com/Raflyromeo/tic-tac-toe-backend)
 
 ---
-**Dibuat oleh Rafly Romeo.** 🚀
+Dibuat dengan ❤️ oleh [Rafly Romeo](https://github.com/Raflyromeo)
