@@ -10,11 +10,13 @@ Aplikasi web Tic Tac Toe modern dengan estetika **Retro Brutalist**. Game ini me
 - **Mode Tema**: Mendukung Mode Terang, Gelap, dan Sinkronisasi Sistem.
 
 ## 🛠️ Tech Stack
-- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animation**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Communication**: [Socket.io-client](https://socket.io/)
+- **Framework**: [Next.js 16.2.4](https://nextjs.org/) (App Router)
+- **Library UI**: [React 19.2.4](https://react.dev/)
+- **Styling**: [Tailwind CSS 4.0+](https://tailwindcss.com/)
+- **Animasi**: [Framer Motion 12.38.0](https://www.framer.com/motion/)
+- **Ikon**: [Lucide React 1.11.0](https://lucide.dev/)
+- **Real-time**: [Socket.io-client 4.8.3](https://socket.io/)
+- **Komponen**: [Base UI 1.4.1](https://base-ui.com/) & Radix UI primitives.
 
 ## 🚀 Cara Menjalankan
 1. Clone repository:
